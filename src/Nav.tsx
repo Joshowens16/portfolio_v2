@@ -54,7 +54,7 @@ const Nav = () => {
           <button>Resume</button>
         </div>
       </nav>
-      <div className="bg-blue-300 static">
+      <div className="static">
         <section className="borer-red w-screen" id="Home">
           <Home />
         </section>
