@@ -9,6 +9,7 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import Projects from "./Projects";
 
 const nav = [
   {
@@ -55,11 +56,14 @@ const Nav = () => {
         </div>
       </nav>
       <div className="static">
-        <section className="borer-red w-screen" id="Home">
+        <section className="w-screen" id="Home">
           <Home />
         </section>
-        <section className="borer-red w-screen" id="About">
+        <section className="w-screen" id="About">
           <About />
+        </section>
+        <section className="w-screen" id="Projects">
+          <Projects />
         </section>
       </div>
     </>
