@@ -16,7 +16,7 @@ const Home = () => {
         <p className="flex flex-col justify-self-center self-center text-7xl mt-4">
           Josh Owens
         </p>
-        <p className="mt-4">
+        <p className="">
           I build full stack applications using TypeScript, React, and Express.
         </p>
         <Link
@@ -28,7 +28,9 @@ const Home = () => {
           duration={750}
           className="flex justify-center content-center mt-12"
         >
-          <button>Learn more about me &rarr;</button>
+          <button className="p-2 border-2 border-transparent hover:border-2 hover:border-white rounded">
+            Learn more about me &rarr;
+          </button>
         </Link>
       </div>
     </div>
