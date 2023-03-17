@@ -41,8 +41,8 @@ const Nav = () => {
                 smooth={true}
                 spy={true}
                 to={section.name}
-                offset={-50}
-                duration={1000}
+                offset={-40}
+                duration={750}
               >
                 <button className="bg-sky-900 p-1 text-white rounded hover:ring-1 ring-white">
                   {section.name}
