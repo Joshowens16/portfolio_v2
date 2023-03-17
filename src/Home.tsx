@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 const Home = () => {
   return (
-    <div className="bg-gray-700 h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw]">
+    <div className="bg-gray-700 h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw] select-none">
       <div className="flex flex-col justify-center content-center">
         <img
           className="w-[150px] h-[150px] object-cover object-center rounded-full border-2 border-white justify-self-center self-center"
@@ -16,7 +16,7 @@ const Home = () => {
         <p className="flex flex-col justify-self-center self-center text-7xl mt-4">
           Josh Owens
         </p>
-        <p className="">
+        <p className="mt-4">
           I build full stack applications using TypeScript, React, and Express.
         </p>
         <Link
