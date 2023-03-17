@@ -1,14 +1,7 @@
 import React from "react";
 import About from "./About";
 import Home from "./Home";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 import Projects from "./Projects";
 
 const nav = [
