@@ -1,0 +1,20 @@
+#homeDiv {
+  background: radial-gradient(circle, #303030 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #303030 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #303030 5%, transparent 6%),
+    radial-gradient(circle at top left, #303030 5%, transparent 6%),
+    radial-gradient(circle at top right, #303030 5%, transparent 6%);
+  background-size: 1em 1em;
+  background-color: #252525;
+  opacity: 0.95;
+}
+#aboutDiv {
+  background: radial-gradient(circle, #303030 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #303030 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #303030 5%, transparent 6%),
+    radial-gradient(circle at top left, #303030 5%, transparent 6%),
+    radial-gradient(circle at top right, #303030 5%, transparent 6%);
+  background-size: 1em 1em;
+  background-color: #5d5d5d;
+  opacity: 0.9;
+}
