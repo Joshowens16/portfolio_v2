@@ -26,8 +26,10 @@ const other: React.ReactElement[] = [
 
 const About = () => {
   return (
-    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw] select-none">
-      <h1>About Me</h1>
+    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center w-[99.01vw] select-none">
+      <h1 className="flex flex-col justify-self-center self-center text-5xl mt-4">
+        About Me
+      </h1>
       <div className="">
         <h2>Hi, I'm Josh Owens</h2>
         <p>
