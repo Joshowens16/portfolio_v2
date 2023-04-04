@@ -7,6 +7,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import EmailIcon from "@mui/icons-material/Email";
+import DescriptionIcon from "@mui/icons-material/Description";
 const nav = [
   {
     name: "Home",
@@ -53,7 +54,10 @@ const Nav = () => {
           })}
         </div>
         <div className="flex justify-self-center self-center xl:mr-20 sm:mr-2">
-          <button>Resume</button>
+          <button className="flex justify-center content-center">
+            <DescriptionIcon />
+            Resume
+          </button>
         </div>
       </nav>
       <div className="static">
