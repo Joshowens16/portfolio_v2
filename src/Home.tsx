@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 const Home = () => {
   return (
-    <div className="bg-gray-700 h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw] select-none">
+    <div className="bg-gptDark h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw] select-none">
       <div className="flex flex-col justify-center content-center">
         <img
           className="w-[150px] h-[150px] object-cover object-center rounded-full border-2 border-white justify-self-center self-center"

@@ -3,26 +3,33 @@ import About from "./About";
 import Home from "./Home";
 import { Link } from "react-scroll";
 import Projects from "./Projects";
-
+import HomeIcon from "@mui/icons-material/Home";
+import PersonIcon from "@mui/icons-material/Person";
+import ConstructionIcon from "@mui/icons-material/Construction";
+import EmailIcon from "@mui/icons-material/Email";
 const nav = [
   {
     name: "Home",
+    icon: <HomeIcon />,
   },
   {
     name: "About",
+    icon: <PersonIcon />,
   },
   {
     name: "Projects",
+    icon: <ConstructionIcon />,
   },
   {
     name: "Let's Connect",
+    icon: <EmailIcon />,
   },
 ];
 
 const Nav = () => {
   return (
     <>
-      <nav className="flex flex-row justify-between p-1 shadow-xl bg-gray-300 sticky top-0 z-50 lg:w-1000">
+      <nav className="flex flex-row justify-between p-2 shadow-xl bg-gray-300 sticky top-0 z-50 lg:w-1000">
         <div className="flex justify-self-center self-center xl:ml-20 sm:ml-2">
           <p>Josh Owens</p>
         </div>
@@ -37,7 +44,8 @@ const Nav = () => {
                 offset={-40}
                 duration={750}
               >
-                <button className="bg-sky-900 p-1 text-white rounded hover:ring-1 ring-white">
+                <button className="flex justify-center content-center">
+                  {section.icon}
                   {section.name}
                 </button>
               </Link>
