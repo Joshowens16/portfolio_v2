@@ -9,6 +9,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
 import { ClassNames } from "@emotion/react";
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const nav = [
   {
     name: "Home",
@@ -20,6 +21,10 @@ const nav = [
   },
   {
     name: "Projects",
+    icon: <ViewInArIcon />,
+  },
+  {
+    name: "Skills",
     icon: <ConstructionIcon />,
   },
   {

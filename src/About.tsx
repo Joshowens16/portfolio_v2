@@ -27,12 +27,12 @@ const other: React.ReactElement[] = [
 const About = () => {
   return (
     <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
-      <h1 className="flex flex-col justify-self-center self-center text-5xl mt-4">
+      <h1 className="flex flex-col justify-self-start self-start text-5xl mt-4">
         About Me
       </h1>
-      <div className="flex justify-center content-center flex-col w-9/12 mt-5">
-        <h2>Hi, I'm Josh Owens</h2>
-        <p>
+      <div className="flex flex-col w-9/12 mt-5 gap-4">
+        <h2 className="flex justify-center self-center">Hi, I'm Josh Owens</h2>
+        <p className="flex justify-center self-center">
           I am a full stack developer from California. I first became interested
           in programming in 2021, when I came across some open source resources
           to get started in the web development world. I became fascinated with

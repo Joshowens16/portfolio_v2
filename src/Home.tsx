@@ -28,8 +28,9 @@ const Home = () => {
           duration={750}
           className="flex justify-center content-center mt-12"
         >
-          <button className="p-2 border-2 border-transparent hover:border-2 hover:border-white rounded">
+          <button className="group text-white transition duration-300">
             Learn more about me &rarr;
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </button>
         </Link>
       </div>
