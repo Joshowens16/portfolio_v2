@@ -26,11 +26,11 @@ const other: React.ReactElement[] = [
 
 const About = () => {
   return (
-    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center w-[99.01vw] select-none">
+    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
       <h1 className="flex flex-col justify-self-center self-center text-5xl mt-4">
         About Me
       </h1>
-      <div className="">
+      <div className="flex justify-center content-center flex-col w-9/12 mt-5">
         <h2>Hi, I'm Josh Owens</h2>
         <p>
           I am a full stack developer from California. I first became interested

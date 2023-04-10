@@ -1,13 +1,14 @@
-import React from "react";
 import About from "./About";
 import Home from "./Home";
 import { Link } from "react-scroll";
 import Projects from "./Projects";
 import HomeIcon from "@mui/icons-material/Home";
+import React from "react";
 import PersonIcon from "@mui/icons-material/Person";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
+import { ClassNames } from "@emotion/react";
 const nav = [
   {
     name: "Home",
@@ -45,18 +46,21 @@ const Nav = () => {
                 offset={-40}
                 duration={750}
               >
-                <button className="flex justify-center content-center">
-                  {section.icon}
-                  {section.name}
+                <button className="group text-black transition duration-300">
+                  <div className="flex justify-center content-center gap-1">
+                    {section.icon}
+                    {section.name}
+                  </div>
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </button>
               </Link>
             );
           })}
         </div>
         <div className="flex justify-self-center self-center xl:mr-20 sm:mr-2">
-          <button className="flex justify-center content-center">
+          <button className="flex justify-center content-center gap-2">
             <DescriptionIcon />
-            Resume
+            <>Resume</>
           </button>
         </div>
       </nav>
