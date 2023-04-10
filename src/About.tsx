@@ -1,29 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const frontEnd: React.ReactElement[] = [
-  <i className="devicon-html5-plain-wordmark colored"></i>,
-  <i className="devicon-css3-plain-wordmark colored"></i>,
-  <i className="devicon-javascript-plain colored"></i>,
-  <i className="devicon-typescript-plain colored"></i>,
-  <i className="devicon-react-original-wordmark colored"></i>,
-  <i className="devicon-redux-original colored"></i>,
-  <i className="devicon-materialui-plain colored"></i>,
-  <i className="devicon-bootstrap-plain-wordmark colored"></i>,
-];
-const backEnd: React.ReactElement[] = [
-  <i className="devicon-nodejs-plain-wordmark colored"></i>,
-  <i className="devicon-express-original-wordmark colored"></i>,
-  <i className="devicon-postgresql-plain-wordmark colored"></i>,
-  <i className="devicon-sequelize-plain-wordmark colored"></i>,
-];
-const other: React.ReactElement[] = [
-  <i className="devicon-firebase-plain-wordmark colored"></i>,
-  <i className="devicon-git-plain-wordmark colored"></i>,
-  <i className="devicon-github-original-wordmark colored"></i>,
-  <i className="devicon-webpack-plain colored"></i>,
-];
-
 const About = () => {
   return (
     <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
@@ -63,27 +40,7 @@ const About = () => {
           the world of swimming, so each summer I coach a recreation swim team.
         </p>
       </div>
-      <div className="">
-        <h1>Technical Skills</h1>
-        <h2>Front-End</h2>
-        <div className="frontend">
-          {frontEnd.map((skill) => {
-            return skill;
-          })}
-        </div>
-        <h2>Back-End</h2>
-        <div className="">
-          {backEnd.map((skill) => {
-            return skill;
-          })}
-        </div>
-        <h2>Other</h2>
-        <div className="other">
-          {other.map((skill) => {
-            return skill;
-          })}
-        </div>
-      </div>
+
       <div id="">
         <button>Check out my projects &rarr;</button>
       </div>
