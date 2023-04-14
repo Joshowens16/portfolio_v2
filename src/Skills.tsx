@@ -23,28 +23,28 @@ const other: React.ReactElement[] = [
 ];
 const Skills = () => {
   return (
-    <div>
-      <div className="flex flex-col h-screen p-4">
-        <h1>Technical Skills</h1>
-        <div className="flex flex-row h-[500px]">
-          <div className="border-2 p-5">
-            <h2>Front-End</h2>
-            {frontEnd.map((skill) => {
-              return skill;
-            })}
-          </div>
-          <div className="">
-            <h2>Back-End</h2>
-            {backEnd.map((skill) => {
-              return skill;
-            })}
-          </div>
-          <div className="other">
-            <h2>Other</h2>
-            {other.map((skill) => {
-              return skill;
-            })}
-          </div>
+    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
+      <h1 className="flex flex-col justify-self-start self-start text-5xl mt-4">
+        Technical Skills
+      </h1>
+      <div className="flex flex-row h-[500px] w-9/12 border-2 self-center">
+        <div className="border-2 p-5">
+          <h2>Front-End</h2>
+          {frontEnd.map((skill) => {
+            return skill;
+          })}
+        </div>
+        <div className="">
+          <h2>Back-End</h2>
+          {backEnd.map((skill) => {
+            return skill;
+          })}
+        </div>
+        <div className="other">
+          <h2>Other</h2>
+          {other.map((skill) => {
+            return skill;
+          })}
         </div>
       </div>
     </div>
