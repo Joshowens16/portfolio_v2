@@ -17,14 +17,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.8.2",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
     "react-social-media-bar": "^0.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-scroll": "^1.8.6",
+    "@types/react-slick": "^0.23.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
