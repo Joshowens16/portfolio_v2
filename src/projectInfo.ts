@@ -23,13 +23,13 @@ const projects: ProjectType[] = [
     github: "https://github.com/2208-GS-Team-1/Comic-Overflow",
     live: "https://comic-overflow-production.up.railway.app/",
   },
-  // {
-  //   title: "Personal Site",
-  //   description: "You're here right now!",
-  //   image: "/portfolioLight.png",
-  //   github: "https://github.com/Joshowens16/portfolio",
-  //   live: "https://joshowens.onrender.com/",
-  // },
+  {
+    title: "Personal Site",
+    description: "You're here right now!",
+    image: "/portfolioLight.png",
+    github: "https://github.com/Joshowens16/portfolio",
+    live: "https://joshowens.onrender.com/",
+  },
 ];
 
 export default projects;
