@@ -40,13 +40,15 @@ const About = () => {
           the world of swimming, so each summer I coach a recreation swim team.
         </p>
       </div>
-      {/* <div className="flex self-center mt-4">
-        <button>Check out my projects &rarr;</button>
-      </div> */}
-      <div className="flex self-center arrow bounce ">
-        <a className="fa fa-arrow-down fa-2x text-black" href="#">
-          <ExpandMoreIcon fontSize="large" />
-        </a>
+      <div className="flex self-center mt-4">
+        <button className="flex justify-center flex-col gap-5">
+          Check out my projects
+          <div className="flex self-center arrow bounce ">
+            <a className="fa fa-arrow-down fa-2x text-black" href="#">
+              <ExpandMoreIcon fontSize="large" />
+            </a>
+          </div>
+        </button>
       </div>
     </div>
   );
