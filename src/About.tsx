@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const About = () => {
   return (
     <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
-      <h1 className="flex flex-col justify-self-start self-start text-5xl mt-4">
+      <h1 className="flex flex-col justify-self-center self-center text-5xl mt-1 mb-4">
         About Me
       </h1>
       <div className="flex flex-col w-9/12 mt-5 gap-4">

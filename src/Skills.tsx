@@ -27,10 +27,10 @@ const Skills = () => {
       <h1 className="flex flex-col justify-self-start self-start text-5xl mt-4">
         Technical Skills
       </h1>
-      <div className="flex flex-row h-[500px] w-9/12 border-2 self-center">
+      <div className="flex flex-row h-[500px] w-9/12 self-center mt-12">
         <div className="flex flex-col content-center w-[33.3333%]">
           <h2 className="flex self-center text-4xl">Front-End</h2>
-          <div className="flex flex-row gap-4 flex-wrap mt-6">
+          <div className="flex flex-row justify-center gap-4 flex-wrap mt-6">
             {frontEnd.map((skill) => {
               return <p className="text-6xl">{skill}</p>;
             })}
@@ -38,7 +38,7 @@ const Skills = () => {
         </div>
         <div className="flex flex-col w-[33.3333%] border-x-2">
           <h2 className="flex self-center text-4xl">Back-End</h2>
-          <div className="flex flex-row self-center gap-4 flex-wrap mt-6">
+          <div className="flex flex-row  justify-center self-center gap-4 flex-wrap mt-6">
             {backEnd.map((skill) => {
               return <p className="text-6xl">{skill}</p>;
             })}
