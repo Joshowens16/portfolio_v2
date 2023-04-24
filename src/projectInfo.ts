@@ -17,7 +17,8 @@ const projects: ProjectType[] = [
   },
   {
     title: "Comic Overflow",
-    description: "Comic Overflow is a e-commerce web application.",
+    description:
+      "Comic Overflow is a e-commerce web application built by myself and 3 other developers over the course of 2.5 weeks. It is built with React on the front-end and Express on the back-end and uses a PostgreSQL database to store products and user information.",
     image: "/comicoverflowimg.png",
     github: "https://github.com/2208-GS-Team-1/Comic-Overflow",
     live: "https://comic-overflow-production.up.railway.app/",
