@@ -30,7 +30,7 @@ const Home = () => {
         >
           <button className="group text-white transition duration-300">
             Learn more about me &rarr;
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white mt-1"></span>
           </button>
         </Link>
       </div>

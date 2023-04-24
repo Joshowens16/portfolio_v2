@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./index.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link } from "react-scroll";
 const About = () => {
   return (
     <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
@@ -40,15 +41,21 @@ const About = () => {
           the world of swimming, so each summer I coach a recreation swim team.
         </p>
       </div>
-      <div className="flex self-center mt-4">
-        <button className="flex justify-center flex-col gap-5">
-          Check out my projects
-          <div className="flex self-center arrow bounce ">
-            <a className="fa fa-arrow-down fa-2x text-black" href="#">
-              <ExpandMoreIcon fontSize="large" />
-            </a>
-          </div>
-        </button>
+      <div className="flex self-center mt-4 m-0 p-0">
+        <Link
+          activeClass="active"
+          smooth={true}
+          spy={true}
+          to="Projects"
+          offset={-40}
+          duration={750}
+          className="flex justify-center content-center mt-12"
+        >
+          <button className="group text-black transition duration-300">
+            Check out my projects &rarr;
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"></span>
+          </button>
+        </Link>
       </div>
     </div>
   );
