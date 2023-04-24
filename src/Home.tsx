@@ -5,7 +5,7 @@ const Home = () => {
     <div className="bg-gptDark h-screen px-[70px] flex flex-wrap justify-center flex-col content-center w-[99.01vw] select-none">
       <div className="flex flex-col justify-center content-center">
         <img
-          className="w-[150px] h-[150px] object-cover object-center rounded-full border-2 border-white justify-self-center self-center"
+          className="w-[175px] h-[175px] object-cover object-center rounded-full border-2 border-white justify-self-center self-center"
           src="/joshHS.PNG"
         />
       </div>

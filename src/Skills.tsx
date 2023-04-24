@@ -28,23 +28,29 @@ const Skills = () => {
         Technical Skills
       </h1>
       <div className="flex flex-row h-[500px] w-9/12 border-2 self-center">
-        <div className="border-2 p-5">
-          <h2>Front-End</h2>
-          {frontEnd.map((skill) => {
-            return skill;
-          })}
+        <div className="flex flex-col content-center w-[33.3333%]">
+          <h2 className="flex self-center text-4xl">Front-End</h2>
+          <div className="flex flex-row gap-4 flex-wrap mt-6">
+            {frontEnd.map((skill) => {
+              return <p className="text-6xl">{skill}</p>;
+            })}
+          </div>
         </div>
-        <div className="">
-          <h2>Back-End</h2>
-          {backEnd.map((skill) => {
-            return skill;
-          })}
+        <div className="flex flex-col w-[33.3333%] border-x-2">
+          <h2 className="flex self-center text-4xl">Back-End</h2>
+          <div className="flex flex-row self-center gap-4 flex-wrap mt-6">
+            {backEnd.map((skill) => {
+              return <p className="text-6xl">{skill}</p>;
+            })}
+          </div>
         </div>
-        <div className="other">
-          <h2>Other</h2>
-          {other.map((skill) => {
-            return skill;
-          })}
+        <div className="flex flex-col w-[33.3333%]">
+          <h2 className="flex self-center text-4xl">Other</h2>
+          <div className="flex flex-row self-center gap-4 flex-wrap mt-6">
+            {other.map((skill) => {
+              return <p className="text-6xl">{skill}</p>;
+            })}
+          </div>
         </div>
       </div>
     </div>

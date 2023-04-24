@@ -80,7 +80,7 @@ const Nav = () => {
         <section className="w-screen" id="Projects">
           <Projects />
         </section>
-        <section className="w-screen" id="Skills">
+        <section className="w-screen h-screen m-0 p-0" id="Skills">
           <Skills />
         </section>
       </div>
