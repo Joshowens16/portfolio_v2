@@ -11,6 +11,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import { ClassNames } from "@emotion/react";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import Skills from "./Skills";
+import Connect from "./Connect";
 const nav = [
   {
     name: "Home",
@@ -22,10 +23,6 @@ const nav = [
   },
   {
     name: "Projects",
-    icon: <ViewInArIcon />,
-  },
-  {
-    name: "Skills",
     icon: <ConstructionIcon />,
   },
   {
@@ -80,8 +77,8 @@ const Nav = () => {
         <section className="w-screen" id="Projects">
           <Projects />
         </section>
-        <section className="w-screen h-screen m-0 p-0" id="Skills">
-          <Skills />
+        <section className="w-screen h-screen m-0 p-0" id="Let's Connect">
+          <Connect />
         </section>
       </div>
     </>
