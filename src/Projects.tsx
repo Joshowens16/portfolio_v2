@@ -10,26 +10,26 @@ const Projects = () => {
       <div className="flex flex-row gap-8">
         {projects.map((project) => {
           return (
-            <div className="flex flex-col flex-wrap w-[33.3333%] justify-between justify-self-center gap-4">
-              <div className="flex self-center flex-col py-2">
-                <h2 className="text-3xl mb-4">{project.title}</h2>
+            <div className="flex flex-col flex-wrap w-[400px] justify-st gap-4 bg-white text-black p-0 m-0 rounded-lg">
+              <div className="flex flex-col content-center self-center">
                 <img
-                  className="flex w-[400px] aspect-video rounded-lg"
+                  className="flex w-[400px] aspect-video rounded-t-lg"
                   src={project.image}
                 />
               </div>
-              <div>
+              <h2 className="text-3xl mb-4 px-4">{project.title}</h2>
+              <div className="px-4">
                 <p>{project.description}</p>
               </div>
-              <div className="flex flex-row gap-4">
-                <button className="group text-white transition duration-300">
+              <div className="flex flex-row gap-4 text-black p-4">
+                <button className="group transition duration-300">
                   <a target="_blank" href={project.github}>
                     Github &rarr;
                   </a>
 
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                 </button>
-                <button className="group text-white transition duration-300">
+                <button className="group transition duration-300">
                   <a target="_blank" href={project.live}>
                     Site &rarr;
                   </a>
