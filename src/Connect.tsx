@@ -12,7 +12,7 @@ const Connect = () => {
     email: "",
     message: "",
   });
-  const [error, setError] = useState("");
+  const [error, setError] = useState(" ");
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -23,7 +23,7 @@ const Connect = () => {
   };
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setError("");
+    setError(" ");
     if (!message.name.includes(" ")) {
       setError("Please enter your first and last name");
       return;
@@ -35,41 +35,45 @@ const Connect = () => {
     }
   };
   return (
-    <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
-      <h1>Contact Me</h1>
-      <form className="flex flex-col border-2" onSubmit={handleSubmit}>
-        <label htmlFor="">Full Name</label>
-        <input
-          value={message.name}
-          type="text"
-          name="name"
-          className="border-2 border-red-800 w-[200px] p-1"
-          onChange={handleChange}
-        />
-        <label htmlFor="">Your Email</label>
-        <input
-          value={message.email}
-          type="email"
-          name="email"
-          className="border-2 border-red-800 w-[200px] p-1"
-          onChange={handleChange}
-        />
-        <label htmlFor="">Your Message</label>
-        <textarea
-          value={message.message}
-          name="message"
-          className="border-2 border-red-800 resize min-w-[700px] min-h-[200px] max-w-[700px] max-h-[300px] p-1"
-          onChange={handleChange}
-        />
-        {!error ? "" : <p className="text-red-500">{error}</p>}
-        <button
-          type="submit"
-          className="group text-black transition duration-300 w-fit mt-6"
-        >
-          Send &rarr;
-          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"></span>
-        </button>
-      </form>
+    <div className="flex flex-col bg-gray-100 h-screen w-[99.01vw] select-none">
+      <h1 className="flex flex-col bg-gray-100 justify-self-center self-center text-5xl mt-6">
+        Contact Me
+      </h1>
+      <div className="bg-gray-100 h-screen px-[70px] flex flex-wrap flex-col content-center justify-center w-[99.01vw] select-none">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
+          <label htmlFor="">Full Name</label>
+          <input
+            value={message.name}
+            type="text"
+            name="name"
+            className="border-2 border-gptDark w-[200px] p-1 rounded-md outline-none focus:outline-gray-800 mb-2"
+            onChange={handleChange}
+          />
+          <label htmlFor="">Your Email</label>
+          <input
+            value={message.email}
+            type="email"
+            name="email"
+            className="w-[200px] p-1 rounded-md border-2 border-gptDark outline-none focus:outline-gray-800 mb-2"
+            onChange={handleChange}
+          />
+          <label htmlFor="">Your Message</label>
+          <textarea
+            value={message.message}
+            name="message"
+            className="border-2 border-gptDark resize min-w-[700px] min-h-[200px] max-w-[700px] max-h-[300px] p-1 rounded-md outline-none focus:outline-gray-800"
+            onChange={handleChange}
+          />
+          {!error ? "" : <p className="text-red-500">{error}</p>}
+          <button
+            type="submit"
+            className="group text-black transition duration-300 w-fit mt-6 focus:outline-gray-800"
+          >
+            Send &rarr;
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"></span>
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const nav = [
 const Nav = () => {
   return (
     <>
-      <nav className="flex flex-row justify-between p-2 shadow-xl bg-gray-300 sticky top-0 z-50 lg:w-1000">
+      <nav className="flex flex-row justify-between p-2 shadow-xl bg-gray-200 sticky top-0 z-50 lg:w-1000">
         <div className="flex justify-self-center self-center xl:ml-20 sm:ml-2">
           <p>Josh Owens</p>
         </div>
